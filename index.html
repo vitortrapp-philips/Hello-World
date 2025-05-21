@@ -7,13 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1 id="welcome-message"></h1>
     <h1 id="welcome"></h1>
     <h2 id="title"></h2>
     <button id="toggle-theme">🌙 Alternar Tema</button>
 
+    <div id="modal-welcome" class="modal-welcome">
+      <div class="modal-welcome-content">
+        <h2>Bem-vindo!</h2>
+        <p>Qual é o seu nome?</p>
+        <input type="text" id="user-name" placeholder="Digite seu nome">
+        <button id="submit-name">Entrar</button>
+      </div>
+    </div>
+    <h1 id="welcome-message"></h1>
+
+
 <section class="mini-bio">
  <div class="texto-bio">
- <h2>Olá! Eu sou o Vitor!</h2>
     <p>
       Estudante de Ciência da Computação no IFC.<br>
       Adoro tecnologia e jogos diversos.
@@ -38,20 +49,24 @@
   <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3be638ba-58a1-42a6-8969-79a0b0355478/dgj0w0m-cb38b4d8-3b73-4b54-83c0-4b85fa249dea.png/v1/fill/w_894,h_894/gengar_wearing_a_suit_b__by_rainbowdrawsalot_dgj0w0m-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTE1MCIsInBhdGgiOiJcL2ZcLzNiZTYzOGJhLTU4YTEtNDJhNi04OTY5LTc5YTBiMDM1NTQ3OFwvZGdqMHcwbS1jYjM4YjRkOC0zYjczLTRiNTQtODNjMC00Yjg1ZmEyNDlkZWEucG5nIiwid2lkdGgiOiI8PTExNTAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.TjevH_avohcdVWGH2H9yD36AGje2kr7W-bRGASQA5Fo" alt="Minha imagem" class="avatar">
 </section>
 
-<form class="contact-form">
+<form class="contact-form" id="contact-form">
   <h2>📬 Entre em Contato</h2>
   
   <label for="name">Nome:</label>
   <input type="text" id="name" name="name" required>
+  <span class="error-message" id="name-error"></span>
 
   <label for="email">E-mail:</label>
   <input type="email" id="email" name="email" required>
+  <span class="error-message" id="email-error"></span>
 
   <label for="message">Mensagem:</label>
   <textarea id="message" name="message" rows="4" required></textarea>
+  <span class="error-message" id="message-error"></span>
 
-  <button>Enviar ✉️</button>
+  <button type="submit">Enviar ✉️</button>
 </form>
+
 <script src="index.js" defer></script>
 </body>
 </html>
