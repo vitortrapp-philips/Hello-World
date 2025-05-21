@@ -1,0 +1,145 @@
+body {
+ font-family: system-ui;
+ margin: 0;
+ padding: 0;
+ min-height: 100vh;
+ background: radial-gradient(circle at center, #ffffff 0%, #a3bfb9 60%, #6b9a95 80%, #2f5e5a 100%);
+ text-align: center;
+}
+
+#toggle-theme {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background-color: #6d0bb3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#toggle-theme:hover {
+  background-color: #5503a8;
+  transform: scale(1.05);
+}
+
+.mini-bio {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+
+.texto-bio {
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.avatar {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+.hobbies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.hobby {
+  background-color: #c084fc;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+  transition: transform 0.2s ease;
+}
+
+.hobby:hover {
+  transform: scale(1.05);
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+.social-links a {
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #6a0dad;
+}
+.social-links a:hover {
+  color: #4b0082;
+}
+
+.contact-form {
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 40px auto;
+  font-family: sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: rgba(255, 255, 255, 0.8); 
+}
+.contact-form h2 {
+  color: #6a0dad;
+  text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.contact-form button {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #4b0082;
+}
+
+body.dark-mode {
+  background: radial-gradient(circle at center, #1e1e1e 0%, #2c3e50 60%, #34495e 80%, #000000 100%);
+  color: #f0f0f0;
+}
+
+.dark-mode .mini-bio,
+.dark-mode .contact-form {
+  background-color: rgba(30, 30, 30, 0.8);
+}
+
+.dark-mode .hobby {
+  background-color: #8e44ad;
+}
+
+.dark-mode .contact-form button {
+  background-color: #8e44ad;
+}
+
+.dark-mode .contact-form button:hover {
+  background-color: #732d91;
+}
